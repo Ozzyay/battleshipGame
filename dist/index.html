@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+<script defer src="index.bundle.js"></script><script defer src="AI.bundle.js"></script><script defer src="gameboardFactory.bundle.js"></script><script defer src="players.bundle.js"></script><script defer src="battleshipFactory.bundle.js"></script><link href="index.css" rel="stylesheet"></head>
+<body>
+        <div id="PopupText"></div>
+    <div class="header"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-anchor" width="36" height="36"
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M12 9v12m-8 -8a8 8 0 0 0 16 0m1 0h-2m-14 0h-2" />
+        <circle cx="12" cy="6" r="3" />
+    </svg><span class="headerText">BATTLESHIPS</span></div>
+    <div class="container2">
+    <div class="overgrid butn">You <input type="checkbox" name="checkbox" id="switch" autocomplete="off"><label for="switch" class="toggle"></label></div>
+    <div class="overgrid">Opponent</div>
+    </div>
+    <div id="container">
+        <div id="playerGrid"></div>
+        <div id="computerGrid"></div>
+    </div>
+    <div id="playerShipContainer">
+        <div class="carrier"><div class="carriersq"></div>
+        <div class="carriersq"></div>
+        <div class="carriersq"></div>
+        <div class="carriersq"></div>
+        <div class="carriersq"></div></div>
+        <div class="battleship"><div class="bssq"></div>
+        <div class="bssq"></div>
+        <div class="bssq"></div>
+        <div class="bssq"></div></div>
+        <div class="cruiser"><div class="crusq"></div>
+        <div class="crusq"></div>
+        <div class="crusq"></div></div>
+        <div class="submarine"><div class="subsq"></div>
+        <div class="subsq"></div>
+        <div class="subsq"></div></div>
+        <div class="destroyer"><div class="destsq"></div>
+        <div class="destsq"></div></div>
+    </div>
+</body>
+
+</html>

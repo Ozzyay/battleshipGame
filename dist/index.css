@@ -1,0 +1,218 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
+  \*****************************************************************/
+body {
+  font-family: "Bebas Neue", sans-serif;
+  background: url(922f1d2ed584c24cdbfb.jpg) no-repeat center center fixed;
+  background-size: cover;
+  border: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12rem);
+}
+svg {
+  position: relative;
+  top: -0.1rem;
+}
+#container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3em;
+}
+#playerGrid {
+  display: inline-grid;
+  grid-template-columns: repeat(10, 2fr);
+  grid-template-rows: repeat(10, 2fr);
+  gap: 2px;
+}
+#computerGrid {
+  display: inline-grid;
+  grid-template-columns: repeat(10, 2fr);
+  grid-template-rows: repeat(10, 2fr);
+  gap: 2px;
+}
+
+.boardsquare {
+  width: 2.2em;
+  height: 2.2em;
+  background-color: rgba(46, 204, 64, 0.6);
+  border: 1px solid black;
+}
+#computerGrid .boardsquare:hover {
+  background-color: rgba(255, 133, 27, 0.6);
+}
+.chosen {
+  background-color: rgba(57, 204, 204, 0.6);
+}
+.missedHit {
+  background-color: rgba(170, 170, 170, 0.6);
+}
+
+.successfulHit {
+  background-color: rgba(255, 65, 54, 0.6);
+}
+
+.choosing {
+  background-color: rgba(255, 133, 27, 0.6);
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20vw;
+  color: #003355;
+  font-size: 2rem;
+  height: 2em;
+}
+
+.carrier {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: repeat(5, 2fr);
+  grid-template-rows: repeat(1, 2fr);
+  gap: 2px;
+  top: 1em;
+  left: min(30vw, 2em);
+}
+
+.battleship {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: repeat(1, 2fr);
+  gap: 2px;
+  top: 5em;
+  left: -9em;
+}
+
+.cruiser {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(1, 2fr);
+  gap: 2px;
+  top: 5em;
+  left: -8em;
+}
+.submarine {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(1, 2fr);
+  gap: 2px;
+  top: 9em;
+  left: -22em;
+}
+
+.destroyer {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(1, 2fr);
+  gap: 2px;
+  top: 1em;
+  left: -21em;
+}
+.carrier div,
+.battleship div,
+.cruiser div,
+.submarine div,
+.destroyer div {
+  width: 2.2em;
+  height: 2.2em;
+  background-color: rgba(57, 204, 204, 0.8);
+  border: 1px solid black;
+}
+
+.carrier:hover div,
+.battleship:hover div,
+.cruiser:hover div,
+.submarine:hover div,
+.destroyer:hover div {
+  background-color: rgba(133, 20, 75, 0.8);
+}
+
+.toggle {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0 0 20px #477a8550;
+  height: 2.5rem;
+  width: 4.5rem;
+  border: 0;
+  margin: 0;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+input[type="checkbox"] {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+label::after {
+  content: "H";
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+  color: #003355;
+  line-height: 2rem;
+  width: 2rem;
+  height: 2rem;
+  font-weight: 300;
+  background-color: #e8f5f7;
+  position: absolute;
+  border-radius: 1rem;
+  transition: 0.5s;
+  left: 5px;
+  top: 4px;
+}
+input:checked + label:after {
+  content: "V";
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+input:checked + .currentTemp:before {
+  left: calc(100% - 0.6rem);
+  transform: translateX(-100%);
+}
+label:active:after {
+  width: 2rem;
+}
+
+.butn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#PopupText {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 35vh;
+  font-size: 0;
+  z-index: -100;
+  text-align: center;
+  color: #fff;
+  transition: font-size 0.5s;
+  -webkit-text-stroke: 1.5px black;
+}
+
+.calculating {
+  background-color: yellow;
+}
+
