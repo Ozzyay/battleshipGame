@@ -1,4 +1,3 @@
-# 🚀 Welcome to your new awesome project!
 
 ## TO BE WORKED ON IN THE FUTURE:
 
